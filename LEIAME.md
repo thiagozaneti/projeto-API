@@ -41,3 +41,32 @@ Obter média de salário e informações sobre o sexo mais e menos frequente:
 curl http://localhost:5000/medias
 Obter média de idade e informações sobre o sexo mais e menos frequente para mulheres:
 curl http://localhost:5000/intervalo_de_idade/f
+
+**-----------------------------**
+
+
+Configurando o Git Remote para Sincronizar com o GitHub ou outro Repositório Remoto: Um Resumo
+Crie um Repositório Remoto:
+
+No GitHub ou outro provedor, crie um repositório vazio ou faça um fork.
+Anote a URL do repositório.
+Inicialize o Git no Repositório Local:
+
+No terminal, navegue até o diretório do projeto.
+Inicialize o repositório local com git init.
+Adicione e Verifique o Repositório Remoto:
+
+Adicione o repositório remoto com git remote add origin <URL_DO_REPOSITÓRIO_REMOTO>.
+Verifique se o repositório foi adicionado com git remote -v.
+Sincronize as Alterações:
+
+Baixe as últimas alterações do repositório remoto com git fetch origin.
+Adicione os arquivos que você deseja sincronizar ao staging area com git add <arquivos>.
+Comita as alterações com git commit -m "<mensagem_descritiva>".
+Envie as alterações para o repositório remoto com git push origin <branch>.
+Observações:
+
+Substitua <URL_DO_REPOSITÓRIO_REMOTO> pela URL do seu repositório.
+Substitua <branch> pelo nome da branch que você deseja sincronizar.
+Para forks, a branch padrão para push é origin/master.
+Use git push -u origin <branch> para configurar o push automático para a branch especificada.
