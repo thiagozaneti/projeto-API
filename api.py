@@ -4,10 +4,10 @@ from random_data import pessoas
 
 bp = Blueprint("api", __name__)
 
-@bp.route("/api/index", methods = ["GET"])
-def index():
-    mostrar_pessoas = mostrar_lista(pessoas)
-    return jsonify({"Status":200, "Pessoas":mostrar_pessoas})
+# @bp.route("/api/index", methods = ["GET"])
+# def index():
+#     mostrar_pessoas = mostrar_lista(pessoas)
+#     return jsonify({"Status":200, "Pessoas":mostrar_pessoas})
 
 @bp.route("/api/idades", methods = ["GET"])
 def idades():

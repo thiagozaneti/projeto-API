@@ -1,7 +1,6 @@
 // Events
 document.getElementById("btn_idades").addEventListener("click", function(e){
     // console.log("Href -> ", this);
-    e.preventDefault();
     fetch(this.href)
         .then((resp) => resp.json())
         .then(function(data) {
@@ -10,6 +9,7 @@ document.getElementById("btn_idades").addEventListener("click", function(e){
         console.log(error);
     });
 });
+
 
 function createNode(element) {
     return document.createElement(element);
